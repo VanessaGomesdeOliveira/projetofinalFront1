@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
-
 :root {
     --ideal-viewport-width: 1600;
     --max-width: 1600px;
@@ -19,7 +18,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
 }
 
 html {
@@ -30,7 +29,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
-    font-family:var(--font-normal);
+    font-family: var(--font-normal);
 }
 
 button, a {
@@ -53,7 +52,7 @@ button, a {
     align-items: center;
 }
 
-.column-flex{
+.column-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +71,8 @@ header {
 .header-brand-logo {
     flex: 1 1 auto;
 }
-.header-brand-logo a{
+
+.header-brand-logo a {
     display: inline-flex;
     align-items: center;
 }
@@ -108,7 +108,7 @@ section.banner {
     height: 30rem;
 }
 
-main > h2 {
+main>h2 {
     margin: 2rem 0;
     font-family: var(--font-oswald);
     border-top: 2px solid var(--contraste-color);
@@ -117,40 +117,44 @@ main > h2 {
     padding: .9em 0;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
-.game-card{
+.game-card {
     width: 100%;
+}
+
+.game-card a {
     position: relative;
     overflow: hidden;
 }
-.game-card img{
+
+.game-card img {
     width: 100%;
     object-fit: cover;
     transition: transform .3s ease-in-out;
 }
 
-.game-info{
+.game-info {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     transition: height 2s ease-in-out;
     color: var(--contraste-color);
 }
 
-.game-info h2{
+.game-info h2 {
     text-decoration: underline;
 }
 
-.game-card:hover .game-info{
+.game-card:hover .game-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -158,12 +162,16 @@ main > h2 {
     height: 100%;
     backdrop-filter: blur(2px);
 }
-.game-card:hover img{
+
+.game-card:hover img {
     transform: scale(1.3);
 }
 
-footer {
+.next-release-card {
+    border: 1px solid var(--contraste-color);
+}
 
+footer {
     width: 100%;
     padding: .5rem 0;
     font-size: .8rem;
