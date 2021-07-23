@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
+
 :root {
     --ideal-viewport-width: 1600;
     --max-width: 1600px;
-    --primary-color: #00bcd4;
-    --accent-color: #ff4081;
-    --background-color: #f2f2f2;
-    --text-color: #333;
-    --text-color-light: #666;
+    --bg-color: #202225;
+    --bg-color-secondary: #2f3137;
+    --text-color: #fff;
+    --text-color-dark: hsl(0, 0%, 70%);
+    --contraste-color: #FF8A05;
+    --font-footer: 'Oswald', sans-serif;
+    --font-normal: 'DM Sans', sans-serif;
 }
 
 * {
@@ -15,22 +19,23 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;  
 }
 
 html {
     font-size: calc(16 * clamp(0.65px, 100vw / var(--ideal-viewport-width), 1.45px));
-    ;
 }
 
 body {
-    background: var(--background-color);
+    background: var(--bg-color);
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
-    font-family: sans-serif;
+    font-family:var(--font-normal);
 }
 
 button, a {
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .container {
@@ -39,6 +44,7 @@ button, a {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 .row-flex {
@@ -47,14 +53,32 @@ button, a {
     align-items: center;
 }
 
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* header */
 
 header {
     padding: .5rem 0;
+    background-color: var(--bg-color-secondary);
+    min-height: 20px;
+    color: var(--text-color);
 }
 
 .header-brand-logo {
     flex: 1 1 auto;
+}
+.header-brand-logo a{
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-brand-logo img {
+    width: 5rem;
 }
 
 .header-navbar {
@@ -71,13 +95,79 @@ header {
     border-bottom: 4px solid var(--accent-color);
 }
 
-footer {
+section.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Bannergame.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+main > h2 {
+    margin: 2rem 0;
+    font-family: var(--font-oswald);
+    border-top: 2px solid var(--contraste-color);
+    border-bottom: 2px solid var(--contraste-color);
+    color: var(--text-color-dark);
+    padding: .9em 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.game-card{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.game-card img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.game-info{
+    display: none;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0,0.2);
+    transition: height 2s ease-in-out;
+    color: var(--contraste-color);
+}
+
+.game-info h2{
+    text-decoration: underline;
+}
+
+.game-card:hover .game-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(2px);
+}
+.game-card:hover img{
+    transform: scale(1.3);
+}
+
+footer {
+
     width: 100%;
     padding: .5rem 0;
     font-size: .8rem;
-    background: var(--background-color);
+    background: var(--bg-color);
     color: var(--text-color);
+    font-family: var(--font-footer);
 }

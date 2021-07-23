@@ -13,3 +13,18 @@ fetch("../pages/footer.html")
   .then(data => {
     document.querySelector("footer").innerHTML = data;
   });
+
+
+/*   fetch("https://api.rawg.io/api/games", {
+	"method": "GET",
+	"headers": {
+		"key": "e8f22aff13234fa89a4900057d0921cc",
+		"ordering": "-rating"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+}); */
