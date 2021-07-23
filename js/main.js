@@ -1,4 +1,4 @@
-fetch("../pages/header.html")
+fetch("./pages/header.html")
   .then(response => {
     return response.text()
   })
@@ -6,7 +6,7 @@ fetch("../pages/header.html")
     document.querySelector("header").innerHTML = data;
   });
 
-fetch("../pages/footer.html")
+fetch("./pages/footer.html")
   .then(response => {
     return response.text()
   })
