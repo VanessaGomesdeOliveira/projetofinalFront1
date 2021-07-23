@@ -4,6 +4,7 @@
     --max-width: 1600px;
     --bg-color: #202225;
     --bg-color-secondary: #2f3137;
+    --bg-color-secondary-light: hsl(225, 8%, 30%);
     --text-color: #fff;
     --text-color-dark: hsl(0, 0%, 70%);
     --contraste-color: #FF8A05;
@@ -68,6 +69,11 @@ header {
     color: var(--text-color);
 }
 
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
 .header-brand-logo {
     flex: 1 1 auto;
 }
@@ -81,18 +87,19 @@ header {
     width: 5rem;
 }
 
-.header-navbar {
-    flex: 2 2 auto;
+.header-navbar{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 
-.header-navbar a {
-    display: inline-block;
-    height: 2rem;
-    line-height: 2rem;
+.header-navbar li{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-navbar a:hover {
-    border-bottom: 4px solid var(--accent-color);
+.header-navbar li:hover  {
+    border-bottom: 4px solid var(--contraste-color);
 }
 
 section.banner {
@@ -117,7 +124,7 @@ main>h2 {
     padding: .9em 0;
 }
 
-.grid {
+.grid-3columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
@@ -125,6 +132,9 @@ main>h2 {
 
 .game-card {
     width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: var(--bg-color-secondary);
 }
 
 .game-card a {
