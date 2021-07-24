@@ -216,11 +216,13 @@ main>h2 {
 .next-release-card {
     border: 1px solid var(--contraste-color);
 }
+
 .next-release-card .description {
     width: 100%;
     padding-bottom: 1rem;
 }
-.next-release-card .description > * {
+
+.next-release-card .description>* {
     margin: 0.5rem 0;
 }
 
@@ -240,24 +242,80 @@ footer {
     right: 0;
 }
 
-.content-banner{
+.content-banner {
     width: 30rem;
     min-width: 20%;
     transform: translateX(-5rem);
 }
 
-.content-banner button{
+.content-banner button {
     margin-top: 1rem;
     padding: .5rem 1rem;
     font-size: 1em;
     background-color: transparent;
-    backdrop-filter: blur(10px)  ;
-    border:2px solid white;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
     border-radius: .5rem;
     transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
 }
-.content-banner button:hover{
+
+.content-banner button:hover {
     transform: scale(1.2);
-    border:2px solid var(--contraste-color);
+    border: 2px solid var(--contraste-color);
     color: var(--contraste-color);
+}
+
+.header-dropdown {
+    display: none;
+}
+
+.dropdown-toggle {
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+    background-color: #2980B9;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: var(--bg-color-secondary);
+    z-index: 1;
+    font-size: 16px;
+    flex: 0 0 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: .5em 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd
+}
+
+@media screen and (max-width: 600px) {
+    .header-login, .header-navbar {
+        display: none;
+    }
+    .header-brand-logo {
+        flex: 0 0 50%;
+    }
+    .header-dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 0 0 50%;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+    .active {
+        display: block;
+    }
 }
