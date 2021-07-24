@@ -29,14 +29,14 @@ body {
 
 
 
-
+/* DIV FORM */
 .form-login {
     
     
     display: flex;
     flex-direction: column;
-    width:35%;
-    padding: 2rem;
+    width: 420px;
+    padding: 30px;
     justify-content: center;
     align-items:center;
     position: absolute;
@@ -48,20 +48,29 @@ body {
 
 }
 
-
-
-
-.form-login h2 {
-    font-size: 2rem;
-}
-
 .form-login form {
     width: 100%;
 }
 
+/* Imagem LOGO */
+
+.form-login img {
+    width: 90px;
+    margin-bottom: 13px;
+}
+
+
+/* Título H2 - Conecte-se com sua Conta */
+.form-login h2 {
+    font-size: 23px;
+    margin-bottom: 13px;
+}
+
+
+/* Divs - Label e Input */
 .item-form {
     width: 100%;
-    margin: 1rem 0;
+    margin: 13px 0;
     text-transform: uppercase;
     font-weight: bold;
     
@@ -70,55 +79,131 @@ body {
 .item-form label {
     display: block;
     text-align: left;
-    margin-bottom: 0.3rem;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    font-size: 12px;
     
     
 }
 
 .item-form input {
-    padding: 1rem;
+    padding: 15px;
     width: 100%;
     border-radius: 8px;
-    outline: none;
-    border: none;
+    /* outline: none; */
+    border: 2px solid var(--contraste-color);
+    background-color: var(--bg-color-secondary);
+    color: var(--text-color);
+    font-family:var(--font-normal);
+    font-size: 15px;
+    cursor: pointer;
+    
 }
 
+/* Animação Input */
+
+.item-form input:focus {
+    border: 2px solid var(--text-color);
+    box-shadow: 0 0 8px 0 white;
+}
+
+
+/* Checkbox Lembrar-me */
+
 .checkbox {
-    display: block;
+  /*   display: block;
     cursor: pointer;
-    padding: 0.3rem;
+    padding: 0.3rem; */
     text-align: left;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
          
 }
 
+input[type=checkbox] {
+    cursor: pointer;
+}
 
+/* Checkbox Animação */
 
-.checkbox label {
-    margin-left: 0.5rem;
+input[type=checkbox]:focus {
+    border: 2px solid var(--text-color);
+    box-shadow: 0 0 8px 0 white;
 }
 
 
+.checkbox label {
+    margin-left: 15px;
+}
+
+
+
+
+/* Botão Conectar */
+
 .btn-login {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
     width:100%;
     background-color: var(--contraste-color);
     border-radius: 8px;
     outline: none;
-    border: none;
+    border: 2px solid var(--contraste-color); 
     font-family:var(--font-normal);
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-size: 20px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
-.form-login img {
-    width: 5rem;
-    margin-bottom: 1rem;
+/* Animação Botão Conectar */
+.btn-login:hover {
+    background-color: var(--bg-color);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid var(--contraste-color); 
+    cursor: pointer;
+    transition: ease 0.5s;
 }
 
-.form-login h2 {
-    margin-bottom: 1rem;
+
+/* Link Ajuda */
+
+.link-ajuda {
+    margin: 10px;
+    font-size: 15px;
+    color: var(--contraste-color)
 }
+
+.link-ajuda:hover {
+    text-decoration: underline;
+    transition: ease 0.5s;
+}
+
+
+/*  Responsivo Celular */
+ @media (min-width: 360px) and (max-width:413px){
+    
+    .form-login {
+        width: 400px;
+
+       
+      }
+    
+
+} 
+
+
+/*  Responsivo Tablete e Desktop */
+/* @media (min-width: 414px) and (max-width:1444px){
+    
+    .form-login {
+        width: 500px;
+
+       
+      }
+    
+
+}  */
+
+
