@@ -3,7 +3,7 @@
 Link: https://vanessagomesdeoliveira.github.io/projetofinalFront1/
 
 Projeto Final de FrontEnd - 1º Bimestre Certified Tech Developer - Digital House
-Professores: Rafael Simas
+Professores: Rafael Simas e Thiago Valadares Nolêto Damasceno
 
 
 1 - Todo o trabalho tem de ser entregue no gitpages, o link do repositório também precisa ser disponibilizado diretamente aos professores pelos líderes das empresas.
