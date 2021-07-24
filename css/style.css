@@ -169,9 +169,8 @@ header {
 /* ----------------Banner---------------- */
 section.banner {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url(../img/Bannergame.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -182,17 +181,19 @@ section.banner {
 
 .content-banner {
     width: 30rem;
-    min-width: 20%;
-    transform: translateX(-5rem);
+    max-width: 60%;
+    margin-left: 10%;
+    letter-spacing: 1.5px;
 }
 
 .content-banner button {
     margin-top: 1rem;
     padding: .5rem 1rem;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: transparent;
     border: 2px solid white;
     border-radius: .5rem;
+    letter-spacing: 2px;
     transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
 }
 
