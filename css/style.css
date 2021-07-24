@@ -191,7 +191,7 @@ main>h2 {
 }
 
 .game-info h2 {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 .game-card:hover .game-info {

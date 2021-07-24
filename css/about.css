@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
+:root {
+    --ideal-viewport-width: 1600;
+    --max-width: 1600px;
+    --bg-color: #202225;
+    --bg-color-secondary: #2f3137;
+    --bg-color-secondary-light: hsl(225, 8%, 30%);
+    --text-color: #fff;
+    --text-color-dark: hsl(0, 0%, 70%);
+    --contraste-color: #FF8A05;
+    --font-footer: 'Oswald', sans-serif;
+    --font-normal: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: calc(16 * clamp(0.65px, 100vw / var(--ideal-viewport-width), 1.45px));
+}
+
+main>h2 {
+    margin: 2rem 0;
+    font-family: var(--font-oswald);
+    border-top: 2px solid var(--contraste-color);
+    border-bottom: 2px solid var(--contraste-color);
+    color: var(--text-color-dark);
+    padding: .9em 0;
+}
+
+.sobre_conteudoFoto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-normal);
+}
+
+button, a {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-alunos {
+    margin: 2rem;
+}
+
+.sobre_img {
+    width: 50px;
+    height: 300px;
+}
+
+.imagem_git {
+    width: 30px;
+    position: absolute;
+    left: 60px;
+}
+
+.imagem_linkedin {
+    width: 30px;
+    position: absolute;
+}
+
+.linkedin {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: height 2s ease-in-out;
+    color: var(--contraste-color);
+}
+
+.linkedin h2 {
+    text-decoration: underline;
+}
+
+.game-card:hover .linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(2px);
+}
+
+.description h4 {
+    margin: 1rem;
+}
