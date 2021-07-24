@@ -4,9 +4,10 @@
     --max-width: 1600px;
     --bg-color: #202225;
     --bg-color-secondary: #2f3137;
-    --bg-color-secondary-light: hsl(225, 8%, 30%);
+    --bg-color-secondary-light: hsl(225, 8%, 60%);
     --text-color: #fff;
     --text-color-dark: hsl(0, 0%, 70%);
+    --text-color-black: hsl(0, 0%, 0%);
     --contraste-color: #FF8A05;
     --font-footer: 'Oswald', sans-serif;
     --font-normal: 'DM Sans', sans-serif;
@@ -230,7 +231,8 @@ main>h2 {
 
 .grid-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 370px);
+    justify-content: center;
     gap: 2.5rem;
 }
 
@@ -248,7 +250,6 @@ main>h2 {
 
 .game-card img {
     width: 100%;
-    object-fit: cover;
     transition: transform .3s ease-in-out;
 }
 
@@ -283,6 +284,7 @@ main>h2 {
 
 .next-release-card {
     border: 1px solid var(--contraste-color);
+    background-color: var(--bg-color-secondary);
 }
 
 .next-release-card .description {
@@ -332,9 +334,6 @@ footer {
     }
     .active {
         display: block;
-    }
-    .grid-cards {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
