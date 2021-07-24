@@ -164,9 +164,11 @@ header {
 .dropdown-menu a:hover {
     background-color: #ddd
 }
+
 /* FIM HEADER */
 
 /* ----------------Banner---------------- */
+
 section.banner {
     display: flex;
     align-items: center;
@@ -202,6 +204,7 @@ section.banner {
     border: 2px solid var(--contraste-color);
     color: var(--contraste-color);
 }
+
 /* ----------------FIM Banner---------------- */
 
 main>h2 {
@@ -213,7 +216,7 @@ main>h2 {
     padding: .9em 0;
 }
 
-.grid-3columns {
+.grid-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
@@ -250,7 +253,7 @@ main>h2 {
 }
 
 .game-info h2 {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .game-card:hover .game-info {
@@ -308,7 +311,6 @@ footer {
         justify-content: flex-end;
         flex: 0 0 50%;
     }
-
     .nav {
         display: flex;
         justify-content: space-between;
@@ -317,5 +319,14 @@ footer {
     }
     .active {
         display: block;
+    }
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .grid-cards {
+        grid-template-columns: 1fr;
     }
 }
