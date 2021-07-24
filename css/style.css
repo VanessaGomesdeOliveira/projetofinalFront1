@@ -182,10 +182,22 @@ section.banner {
 }
 
 .content-banner {
-    width: 30rem;
-    max-width: 60%;
+    max-width: 80%;
     margin-left: 10%;
     letter-spacing: 1.5px;
+}
+
+.content-banner>* {
+    margin: 1rem 0;
+}
+
+.content-banner>h2 {
+    letter-spacing: .1em;
+}
+
+.content-banner p {
+    max-width: 60%;
+    font-size: 1.2em;
 }
 
 .content-banner button {
@@ -290,7 +302,6 @@ footer {
     background-color: var(--bg-color-secondary);
     color: var(--text-color);
     font-family: var(--font-normal);
-    
 }
 
 .fixed-at-bottom {

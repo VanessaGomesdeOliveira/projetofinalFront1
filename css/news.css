@@ -1,51 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
-:root {
-    --ideal-viewport-width: 1600;
-    --max-width: 1600px;
-    --bg-color: #202225;
-    --bg-color-secondary: #2f3137;
-    --bg-color-secondary-light: hsl(225, 8%, 30%);
-    --text-color: #fff;
-    --text-color-dark: hsl(0, 0%, 70%);
-    --contraste-color: #FF8A05;
-    --font-footer: 'Oswald', sans-serif;
-    --font-normal: 'DM Sans', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-}
 
 section.bannernews {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url(../img/Bannergame.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
-    font-size: 24px;
-    padding: 2rem;
 }
 
 .materia {
     width: 80%;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .materia h3 {
     margin: 1rem 0;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .materia p {
@@ -54,7 +28,6 @@ section.bannernews {
 }
 
 .materia p:last-of-type{
-    margin-top: 2;
     margin-bottom: 2rem;
 }
 
@@ -64,7 +37,7 @@ section.bannernews {
 }
 
 p.rodape {
-    font-size: 12px;
+    font-size: .8em;
     text-align: center;
     margin-bottom: 2rem;
 }
