@@ -24,6 +24,7 @@
 
 html {
     font-size: calc(16 * clamp(0.65px, 100vw / var(--ideal-viewport-width), 1.45px));
+    height: 100%;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-normal);
+    min-height: 100%;
 }
 
 button, a {
@@ -70,19 +72,21 @@ header {
     font-size: 1.1rem;
 }
 
-.nav{
+.nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.header-brand-logo{
+.header-brand-logo {
     text-align: left;
 }
+
 .header-brand-logo a {
     display: inline-flex;
     align-items: center;
     padding: 0 1rem;
 }
+
 .header-brand-logo a:hover {
     border-bottom: 4px solid var(--contraste-color);
 }
@@ -91,12 +95,12 @@ header {
     width: 4rem;
 }
 
-.header-navbar{
+.header-navbar {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.header-navbar a{
+.header-navbar a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -104,18 +108,19 @@ header {
     width: 100%;
 }
 
-.header-navbar a > i{
-   margin-right: .4em;
+.header-navbar a>i {
+    margin-right: .4em;
 }
 
-.header-navbar a:hover  {
+.header-navbar a:hover {
     border-bottom: 4px solid var(--contraste-color);
-    color:var(--contraste-color)
+    color: var(--contraste-color)
 }
 
-.header-login{
+.header-login {
     height: 100%;
 }
+
 .header-login a {
     display: inline-flex;
     align-items: center;
@@ -123,14 +128,15 @@ header {
     height: 100%;
     width: 100%;
 }
+
 .header-login a:hover {
     border-bottom: 4px solid var(--contraste-color);
-    color:var(--contraste-color)
+    color: var(--contraste-color)
 }
 
-.header-login a > i{
+.header-login a>i {
     margin-right: .4em;
- }
+}
 
 section.banner {
     display: flex;
@@ -210,12 +216,48 @@ main>h2 {
 .next-release-card {
     border: 1px solid var(--contraste-color);
 }
+.next-release-card .description {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.next-release-card .description > * {
+    margin: 0.5rem 0;
+}
 
 footer {
     width: 100%;
     padding: .5rem 0;
     font-size: .8rem;
-    background: var(--bg-color);
+    background-color: var(--bg-color-secondary);
     color: var(--text-color);
     font-family: var(--font-footer);
+}
+
+.fixed-at-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-banner{
+    width: 30rem;
+    min-width: 20%;
+    transform: translateX(-5rem);
+}
+
+.content-banner button{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1em;
+    background-color: transparent;
+    backdrop-filter: blur(10px)  ;
+    border:2px solid white;
+    border-radius: .5rem;
+    transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
+}
+.content-banner button:hover{
+    transform: scale(1.2);
+    border:2px solid var(--contraste-color);
+    color: var(--contraste-color);
 }
