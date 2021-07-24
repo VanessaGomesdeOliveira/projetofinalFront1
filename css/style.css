@@ -63,10 +63,11 @@ button, a {
 /* header */
 
 header {
-    padding: .5rem 0;
+    padding: .5rem 0 0;
     background-color: var(--bg-color-secondary);
     min-height: 20px;
     color: var(--text-color);
+    font-size: 1.1rem;
 }
 
 .nav{
@@ -74,33 +75,62 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.header-brand-logo {
-    flex: 1 1 auto;
+.header-brand-logo{
+    text-align: left;
 }
-
 .header-brand-logo a {
     display: inline-flex;
     align-items: center;
+    padding: 0 1rem;
+}
+.header-brand-logo a:hover {
+    border-bottom: 4px solid var(--contraste-color);
 }
 
 .header-brand-logo img {
-    width: 5rem;
+    width: 4rem;
 }
 
 .header-navbar{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 
-.header-navbar li{
+.header-navbar a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.header-navbar li:hover  {
-    border-bottom: 4px solid var(--contraste-color);
+.header-navbar a > i{
+   margin-right: .4em;
 }
+
+.header-navbar a:hover  {
+    border-bottom: 4px solid var(--contraste-color);
+    color:var(--contraste-color)
+}
+
+.header-login{
+    height: 100%;
+}
+.header-login a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.header-login a:hover {
+    border-bottom: 4px solid var(--contraste-color);
+    color:var(--contraste-color)
+}
+
+.header-login a > i{
+    margin-right: .4em;
+ }
 
 section.banner {
     display: flex;
