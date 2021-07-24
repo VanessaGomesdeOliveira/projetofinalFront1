@@ -281,11 +281,13 @@ main>h2 {
 
 footer {
     width: 100%;
-    padding: .5rem 0;
-    font-size: .8rem;
+    margin-top: 1rem;
+    padding: 1.5rem 0;
+    font-size: 1.1rem;
     background-color: var(--bg-color-secondary);
     color: var(--text-color);
-    font-family: var(--font-footer);
+    font-family: var(--font-normal);
+    
 }
 
 .fixed-at-bottom {
