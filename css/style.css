@@ -138,6 +138,35 @@ header {
     margin-right: .4em;
 }
 
+.header-dropdown {
+    display: none;
+}
+
+.dropdown-toggle {
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: var(--bg-color-secondary);
+    z-index: 1;
+    font-size: 16px;
+    flex: 0 0 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: .5em 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd
+}
+/* FIM HEADER */
+
+/* ----------------Banner---------------- */
 section.banner {
     display: flex;
     flex-direction: column;
@@ -150,6 +179,29 @@ section.banner {
     background-size: cover;
     height: 30rem;
 }
+
+.content-banner {
+    width: 30rem;
+    min-width: 20%;
+    transform: translateX(-5rem);
+}
+
+.content-banner button {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1em;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: .5rem;
+    transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
+}
+
+.content-banner button:hover {
+    transform: scale(1.2);
+    border: 2px solid var(--contraste-color);
+    color: var(--contraste-color);
+}
+/* ----------------FIM Banner---------------- */
 
 main>h2 {
     margin: 2rem 0;
@@ -242,60 +294,6 @@ footer {
     right: 0;
 }
 
-.content-banner {
-    width: 30rem;
-    min-width: 20%;
-    transform: translateX(-5rem);
-}
-
-.content-banner button {
-    margin-top: 1rem;
-    padding: .5rem 1rem;
-    font-size: 1em;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    border: 2px solid white;
-    border-radius: .5rem;
-    transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
-}
-
-.content-banner button:hover {
-    transform: scale(1.2);
-    border: 2px solid var(--contraste-color);
-    color: var(--contraste-color);
-}
-
-.header-dropdown {
-    display: none;
-}
-
-.dropdown-toggle {
-    font-size: 2.2rem;
-    background-color: transparent;
-    border: none;
-}
-
-.dropdown-toggle:hover, .dropdown-toggle:focus {
-    background-color: #2980B9;
-}
-
-.dropdown-menu {
-    display: none;
-    background-color: var(--bg-color-secondary);
-    z-index: 1;
-    font-size: 16px;
-    flex: 0 0 100%;
-}
-
-.dropdown-menu a {
-    display: block;
-    margin: .5em 0;
-}
-
-.dropdown-menu a:hover {
-    background-color: #ddd
-}
-
 @media screen and (max-width: 600px) {
     .header-login, .header-navbar {
         display: none;
@@ -309,6 +307,7 @@ footer {
         justify-content: flex-end;
         flex: 0 0 50%;
     }
+
     .nav {
         display: flex;
         justify-content: space-between;
