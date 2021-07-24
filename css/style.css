@@ -169,9 +169,8 @@ header {
 /* ----------------Banner---------------- */
 section.banner {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url(../img/Bannergame.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -182,8 +181,8 @@ section.banner {
 
 .content-banner {
     width: 30rem;
-    min-width: 20%;
-    transform: translateX(-5rem);
+    max-width: 60%;
+    margin-left: 10%;
 }
 
 .content-banner button {
