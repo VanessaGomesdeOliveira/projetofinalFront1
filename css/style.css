@@ -306,20 +306,6 @@ main>h2 {
 
 
 
-footer {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 1.5rem 0;
-    font-size: 1.1rem;
-    background-color: var(--bg-color-secondary);
-    color: var(--text-color);
-    font-family: var(--font-normal);
-}
-
-
-
-
-
 
 
 .fixed-at-bottom {
@@ -362,23 +348,73 @@ footer {
 
 
 
+
+
+
+
+
+footer {
+    width: 100%;
+
+    margin-top: 50px;
+
+    font-size: 1.1rem;
+    background-color: var(--bg-color-secondary);
+    color: var(--text-color);
+    font-family: var(--font-normal);
+}
+
+
+
+
 .section_rodape{
-    background-color:rgba(0, 0, 0, 0)
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items:center;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .section_termos{
-    height:50px;
-    background-color:rgba(46, 46, 46, 0)
-}
-
-.termos{
-    color: #f9f9f9;
-}
-
-.div_block_rodape{
     display: -webkit-box;
-    display: distribute;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items:center;
 
+    background-color: #585858;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 10px;
+ }
+
+
+.logo_rodape{
+    Height: 50px
 }
+
+.rodape_icon{
+    margin-right: 10px;
+    margin-left: 10px;
+    Height: 30px
+}
+
+
+
