@@ -368,13 +368,24 @@ main>h2 {
     .grid-cards {
         grid-template-columns: 1fr;
     }
+
+    .section_rodape{
+        flex-direction: column;
+        text-align: left;
+    }    
+
+    .section_rodape > *{
+        margin: 0.3em 0em;
+    }
+
 }
+
 
 
 footer {
     width: 100%;
 
-    margin-top: 50px;
+    margin-top: 2rem;
 
     font-size: 1.1rem;
     background-color: var(--bg-color-secondary);
@@ -384,32 +395,32 @@ footer {
 
 .section_rodape{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding: 1rem 1.5rem;
 }
 
 .section_termos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
     background-color: #585858;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 10px;
+
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8em;
  }
 
 
 .logo_rodape{
-    Height: 50px
+    Height: 3em;
 }
 
 .rodape_icon{
-    margin-right: 10px;
-    margin-left: 10px;
-    Height: 30px
+    margin-right: 1em;
+    margin-left: 1em;
+    Height: 1.5em;
 }
 
 
