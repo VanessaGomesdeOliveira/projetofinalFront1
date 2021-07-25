@@ -302,6 +302,10 @@ main>h2 {
     margin: 0.5rem 0;
 }
 
+
+
+
+
 footer {
     width: 100%;
     margin-top: 1rem;
@@ -311,6 +315,12 @@ footer {
     color: var(--text-color);
     font-family: var(--font-normal);
 }
+
+
+
+
+
+
 
 .fixed-at-bottom {
     position: fixed;
@@ -347,4 +357,28 @@ footer {
     .grid-cards {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+
+.section_rodape{
+    background-color:rgba(0, 0, 0, 0)
+}
+
+.section_termos{
+    height:50px;
+    background-color:rgba(46, 46, 46, 0)
+}
+
+.termos{
+    color: #f9f9f9;
+}
+
+.div_block_rodape{
+    display: -webkit-box;
+    display: distribute;
+    display: -ms-flexbox;
+    display: flex;
+
 }
