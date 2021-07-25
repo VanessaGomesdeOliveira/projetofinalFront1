@@ -59,7 +59,7 @@ button, a {
 .column-flex {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -302,34 +302,38 @@ main>h2 {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-
 }
 
 .next-release-card .description>* {
     margin: 0.5rem 0;
 }
 
-.next-release-card .description span{
+.next-release-card .description span {
     font-size: .9em;
 }
-.next-release-card .description a{
+
+.next-release-card .description a {
     color: var(--contraste-color);
     font-size: 1em;
     letter-spacing: 2px;
     text-decoration: underline;
 }
-.next-release-card .description h2{
+
+.next-release-card .description h2 {
     color: var(--contraste-color);
     letter-spacing: 1px;
 }
-.next-release-card .description a:hover{
+
+.next-release-card .description a:hover {
     text-decoration: underline;
     color: var(--text-color);
 }
-.next-release-card .description p:last-of-type{
+
+.next-release-card .description p:last-of-type {
     color: var(--contraste-color);
 }
-.next-release-card .plataformas span{
+
+.next-release-card .plataformas span {
     color: var(--contraste-color);
 }
 
@@ -362,66 +366,67 @@ main>h2 {
     .active {
         display: block;
     }
+
+    section.banner {
+        justify-content: center;
+    }
+    .content-banner{
+        text-align: center;
+        margin: 0 auto;
+        width: initial;
+    }
+    .content-banner p{
+        max-width: 100%;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .grid-cards {
         grid-template-columns: 1fr;
     }
-
-    .section_rodape{
+    .section_rodape {
         flex-direction: column;
         text-align: left;
-    }    
-
-    .section_rodape > *{
+    }
+    .section_rodape>* {
         margin: 0.3em 0em;
     }
-
 }
-
-
 
 footer {
     width: 100%;
-
     margin-top: 2rem;
-
     font-size: 1.1rem;
     background-color: var(--bg-color-secondary);
     color: var(--text-color);
     font-family: var(--font-normal);
 }
 
-.section_rodape{
+.section_rodape {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     padding: 1rem 1.5rem;
 }
 
-.section_termos{
+.section_termos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     background-color: #585858;
-
     padding: 0.6rem 1.5rem;
     font-size: 0.8em;
- }
+}
 
-
-.logo_rodape{
+.logo_rodape {
     Height: 3em;
 }
 
-.rodape_icon{
+.rodape_icon {
     margin-right: 1em;
     margin-left: 1em;
     Height: 1.5em;
 }
-
-
-

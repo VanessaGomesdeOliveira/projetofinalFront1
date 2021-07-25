@@ -19,6 +19,7 @@ section.bannernews {
 .materia h3 {
     margin: 1rem 0;
     font-size: 1.5em;
+    color: var(--contraste-color);
 }
 
 .materia p {
