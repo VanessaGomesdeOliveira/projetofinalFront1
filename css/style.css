@@ -368,9 +368,6 @@ footer {
 
 
 .section_rodape{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -385,9 +382,6 @@ footer {
 }
 
 .section_termos{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
