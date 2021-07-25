@@ -1,8 +1,6 @@
 
 /* DIV FORM */
 .form-login {
-    
-    
     display: flex;
     flex-direction: column;
     width: 420px;
@@ -14,8 +12,6 @@
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 8px;
-    
-
 }
 
 .form-login form {
@@ -43,7 +39,6 @@
     margin: 13px 0;
     text-transform: uppercase;
     font-weight: bold;
-    
 }
 
 .item-form label {
@@ -51,9 +46,7 @@
     text-align: left;
     margin-bottom: 8px;
     letter-spacing: 3px;
-    font-size: 12px;
-    
-    
+    font-size: 12px;    
 }
 
 .item-form input {
@@ -66,8 +59,7 @@
     color: var(--text-color);
     font-family:var(--font-normal);
     font-size: 15px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 /* Animação Input */
@@ -89,7 +81,6 @@
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
-         
 }
 
 input[type=checkbox] {
@@ -103,12 +94,9 @@ input[type=checkbox]:focus {
     box-shadow: 0 0 8px 0 white;
 }
 
-
 .checkbox label {
     margin-left: 15px;
 }
-
-
 
 
 /* Botão Conectar */
@@ -152,15 +140,11 @@ input[type=checkbox]:focus {
 
 
 /*  Responsivo Celular */
- @media (min-width: 360px) and (max-width:413px){
+ @media (min-width: 320px) and (max-width:425px){
     
     .form-login {
-        width: 400px;
-
-       
-      }
-    
-
+        width: 100%;
+    }
 } 
 
 
