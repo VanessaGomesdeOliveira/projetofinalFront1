@@ -41,12 +41,23 @@
     font-weight: bold;
 }
 
-.item-form label {
+.item-form label{
     display: block;
     text-align: left;
     margin-bottom: 8px;
     letter-spacing: 3px;
     font-size: 12px;    
+}
+
+.item-form select{
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--contraste-color);
+    background-color: var(--bg-color-secondary);
+    color: var(--text-color);
+    font-family:var(--font-normal);
+    margin: 0;
 }
 
 .item-form input {
@@ -83,13 +94,13 @@
     cursor: pointer;
 }
 
-input[type=checkbox] {
+input[type=checkbox], select {
     cursor: pointer;
 }
 
 /* Checkbox Animação */
 
-input[type=checkbox]:focus {
+input[type=checkbox]:focus , select:focus {
     border: 2px solid var(--text-color);
     box-shadow: 0 0 8px 0 white;
 }
@@ -148,17 +159,5 @@ input[type=checkbox]:focus {
     
 } 
 
-
-/*  Responsivo Tablete e Desktop */
-/* @media (min-width: 414px) and (max-width:1444px){
-    
-    .form-login {
-        width: 500px;
-
-       
-      }
-    
-
-}  */
 
 
