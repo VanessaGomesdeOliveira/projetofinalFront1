@@ -24,7 +24,7 @@
 }
 
 html {
-    font-size: calc(16 * clamp(0.65px, 100vw / var(--ideal-viewport-width), 1.45px));
+    font-size: calc(16 * clamp(0.7px, 100vw / var(--ideal-viewport-width), 1.45px));
     height: 100%;
 }
 
@@ -246,11 +246,17 @@ main>h2 {
 .game-card a {
     position: relative;
     overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 370px;
 }
 
 .game-card img {
+    height: 100%;
     width: 100%;
     transition: transform .3s ease-in-out;
+    object-fit: cover;
 }
 
 .game-info {

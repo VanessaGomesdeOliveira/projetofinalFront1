@@ -1,4 +1,3 @@
-
 section.bannernews {
     display: flex;
     align-items: center;
@@ -14,7 +13,7 @@ section.bannernews {
 .materia {
     width: 80%;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .materia h3 {
@@ -24,7 +23,8 @@ section.bannernews {
 
 .materia p {
     text-align: left;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1em;
+    line-height: 1.3em;
 }
 
 .materia p:last-of-type{
@@ -37,8 +37,7 @@ section.bannernews {
 }
 
 p.rodape {
-    font-size: .8em;
+    font-size: 0.8rem;
     text-align: center;
     margin-bottom: 2rem;
 }
-
