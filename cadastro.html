@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/brand.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/0f7ed121de.js" crossorigin="anonymous" defer></script>
+  <!-- CSS HEADER -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS HEADER -->
+  <!-- CSS Login -->
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <!-- CSS Login -->  
+  
+  <script src="./js/main.js" defer></script>
+  <title>GeeK Zone | Login</title>
+</head>
+
+<body>
+  
+
+  <!-- Main content Adicionar dentro do main-->
+  <main class="container">
+  <!-- Formulário Cadastro -->  
+    <div class="form-login">
+      <img src="./img/brand.png" alt="icone Logo">
+      <h2>Crie sua Conta GZ Club</h2>
+      <form class="column-flex">
+        
+        <div class="item-form">
+          <label for="id">Nome Usuário:</label>
+          <input type="text" name="id" id="id" placeholder="Digite seu nome">
+          </div>
+
+        <div class="item-form">
+          <label for="estados">Estados</label>
+          <select name="estados" id="estados" class="item-form input-control" required>
+              <option disabled selected value>Estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          </select>
+      </div>
+        <div class="item-form">
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="data" id="data" placeholder="Data">
+        </div>
+          
+            <div class="item-form">
+              <label for="password">Senha</label>
+              <input type="password" name="password" id="password" placeholder="Digite sua senha">
+              </div>
+
+        <button class="btn-login"type="submit">Cadastrar</button>
+        <a href="./index.html" class="btn-login">Voltar</a>
+
+    </form>
+    </div>
+    <!-- Fim Form Login -->
+  </main>
+
+
+</body>
+
+</html>

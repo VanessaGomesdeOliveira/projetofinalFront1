@@ -201,7 +201,7 @@ section.banner {
     font-size: 1.2em;
 }
 
-.content-banner button {
+.content-banner a {
     margin-top: 1rem;
     padding: .5rem 1rem;
     font-size: 1.2em;
@@ -212,7 +212,7 @@ section.banner {
     transition: transform .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
 }
 
-.content-banner button:hover {
+.content-banner a:hover {
     transform: scale(1.2);
     border: 2px solid var(--contraste-color);
     color: var(--contraste-color);
