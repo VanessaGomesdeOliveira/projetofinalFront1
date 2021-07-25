@@ -58,6 +58,10 @@
     text-decoration: underline;
 }
 
+.game-card a {
+    height: 200px;
+}
+
 .game-card:hover .linkedin {
     display: flex;
     flex-direction: column;
