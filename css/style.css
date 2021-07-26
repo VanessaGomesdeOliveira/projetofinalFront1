@@ -412,6 +412,11 @@ footer {
     padding: 1rem 1.5rem;
 }
 
+.section_rodape > *,
+.section_termos > * {
+    margin: 0.3rem;
+}
+
 .section_termos {
     display: flex;
     flex-wrap: wrap;
