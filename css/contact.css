@@ -1,5 +1,6 @@
-main {
-    min-height: 68vh;
+body {
+    min-height: 100vh;
+    position: relative;
 }
 
 .logo img {
@@ -214,20 +215,13 @@ input[type=checkbox]:focus {
     .redes-sociais {
         text-align: center;
     }
+} 
+ @media (max-width:580px){
+    .fixed-at-bottom{
+        position: inherit
+    }
 
 } 
 
-
-/*  Responsivo Tablete e Desktop */
-/* @media (min-width: 414px) and (max-width:1444px){
-    
-    .form-login {
-        width: 500px;
-
-       
-      }
-    
-
-}  */
 
 

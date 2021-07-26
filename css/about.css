@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
+body {
+    min-height: 100vh;
+    position: relative;
+}
 
 .sobre_conteudo {
     margin-bottom: 2rem;
@@ -21,22 +24,6 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 2.5rem;
     justify-items: center;
-}
-
-@media only screen and (max-width: 800px) {
-    .sobre_conteudoFoto {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .sobre_conteudoFoto {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2.5rem;
-    }
 }
 
 .sobre_img {
@@ -73,4 +60,29 @@
     align-items: center;
     height: 100%;
     backdrop-filter: blur(2px);
+}
+
+@media only screen and (max-width: 800px) {
+    .sobre_conteudoFoto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .sobre_conteudoFoto {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:801px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width:1800px) {
+    footer {
+        position: inherit;
+    }
 }
