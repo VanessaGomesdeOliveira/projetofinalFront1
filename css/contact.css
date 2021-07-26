@@ -123,6 +123,7 @@ textarea {
     color: var(--text-color);
     font-family:var(--font-normal);
     font-size: 15px;
+    resize: none;
     cursor: pointer;    
 }
 
@@ -213,7 +214,7 @@ input[type=checkbox]:focus {
     .redes-sociais {
         text-align: center;
     }
-    
+
 } 
 
 
