@@ -48,6 +48,7 @@ button, a {
     padding-right: 1rem;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .row-flex {
@@ -404,6 +405,18 @@ footer {
     bottom: 0;
 }
 
+.go-to-top{
+    display: none;
+    position: fixed;
+    right:20%;
+    bottom: 20%;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 20;
+    color: var(--contraste-color);
+}
+
 @media screen and (max-width: 600px) {
     .header-login, .header-navbar {
         display: none;
@@ -437,6 +450,12 @@ footer {
     .content-banner p {
         max-width: 100%;
         text-align: left;
+    }
+
+    .go-to-top{
+        display: inherit;
+        right:0.5rem;
+        bottom: 10%;
     }
 }
 
