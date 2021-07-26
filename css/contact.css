@@ -128,7 +128,7 @@ textarea {
 
 /* Animação Input */
 
-.item-form input:focus {
+.item-form input:focus, textarea:focus {
     border: 2px solid var(--text-color);
     box-shadow: 0 0 8px 0 white;
 }
