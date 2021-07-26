@@ -1,5 +1,5 @@
 main {
-    min-height: 70.4vh;
+    min-height: 68vh;
 }
 
 .logo img {
@@ -204,10 +204,14 @@ input[type=checkbox]:focus {
 
 
 /*  Responsivo Celular */
- @media (min-width: 320px) and (max-width:425px){
+ @media (max-width:425px){
     
     .form-login {
         width: 100%;
+    }
+    
+    .redes-sociais {
+        text-align: center;
     }
     
 } 
